@@ -1,0 +1,7 @@
+textarea {
+  resize: vertical;
+  width: 50%;
+  height: 300px;
+  padding: 8px;
+  margin :20px;
+}
