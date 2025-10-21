@@ -10,7 +10,7 @@ var submit = async ()=>{
         console.log(data);
   
   const resp = await  parsedata(data);
-     setResj(resp);
+     setResj(JSON.stringify(resp));
     }
     catch(err) {
         alert('❌ ' + err.message);

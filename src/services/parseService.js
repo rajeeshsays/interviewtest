@@ -4,7 +4,7 @@ export async function parsedata(data) {
   console.log('📤 Sending data:', data);
 
   try {
-    const res = await fetch(`${baseUrl}/api/MailParse/parsedata`, {
+    const res = await fetch(`${baseUrl}/api/MailParse/parsedatav`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ data }),
