@@ -1,5 +1,5 @@
 import {React,ReactDom,useEffect,useState} from 'react'
-import { parsedata } from '../services/parseService'
+import { parsedata } from '../../services/parseService'
 import './parse-mail.css'
 export default function Parsemail()
 {
