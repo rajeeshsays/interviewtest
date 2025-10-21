@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Parsemail from './parse-mail'
+import Parsemail from './components/parse-mail'
 function App() {
   return (
    
