@@ -22,7 +22,7 @@ function App() {
     // </div>
 
     <div>
-     <p>Learn React</p>
+     <h1>Parse Mail</h1>
     <Parsemail/>
 
   

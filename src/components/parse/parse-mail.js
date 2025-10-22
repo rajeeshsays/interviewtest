@@ -6,6 +6,7 @@ export default function Parsemail()
 const[data,setData] = useState('')
 const[resj,setResj] = useState('')
 var submit = async ()=>{
+    setResj('')
     try{
         console.log(data);
   
@@ -13,7 +14,7 @@ var submit = async ()=>{
      setResj(JSON.stringify(resp));
     }
     catch(err) {
-        alert('❌ ' + err.message);
+        alert(err.message);
     }
    
   
@@ -25,12 +26,12 @@ setResj('')
 }
 
 useEffect(()=>{
-alert(resj)
+//alert(resj)
 },[resj])
 
 return <>
 <p>Parse Mail</p>
-<textarea value={data} onChange={(e)=>setData(e.target.value)}/>
+<textarea  aria-label="Input Text" value={data} onChange={(e)=>setData(e.target.value)}/>
 <textarea disabled value={resj} onChange={(e)=>setData(e.target.value)}/>
 <button onClick={clear}>Clear</button>
 <button onClick={submit}>Submit</button>
