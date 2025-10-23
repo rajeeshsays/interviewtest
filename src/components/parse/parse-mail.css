@@ -12,14 +12,14 @@ textarea {
   align-items: flex-start;
   gap: 10px;
   margin-top: -15px;
-  left: 10px; /* Moves entire group 20px to the left */       
+  left: 10px;  
   background-color: #699bacdb
 }
  .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-   align-items: center; /* centers label and textarea horizontally */
+   align-items: center; 
  
 } 
 
@@ -51,7 +51,7 @@ width: 96%;
 }
 
 .clear-btn {
-  background-color: #e5e7eb; /* light gray */
+  background-color: #e5e7eb; 
   color: #111827;
 }
 
@@ -60,7 +60,7 @@ width: 96%;
 }
 
 .submit-btn {
-  background-color: #2563eb; /* blue */
+  background-color: #2563eb; 
   color: white;
 }
 
