@@ -6,29 +6,30 @@ textarea {
   margin :20px;
 }
 
-
-
 .container {
  display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
-  
+  margin-top: -15px;
   left: 10px; /* Moves entire group 20px to the left */       
-  background-color: #286e85db
+  background-color: #699bacdb
 }
  .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
    align-items: center; /* centers label and textarea horizontally */
+ 
 } 
+
 label {
   font-weight: 500;
   margin-left: 10px;
   margin-bottom: 5px;
   margin-top:10px;
-  color:whitesmoke;
+color: #2b1905;
+
 }
 .button-group {
 display: flex;

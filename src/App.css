@@ -28,10 +28,14 @@
   color: #61dafb;
 }
 .page-title {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 16px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom : 16px;
+    background-color: #779fac;
+    margin-top: 27px;
+    height: 46px;
+    padding-top: 8px;
 }
 
 @keyframes App-logo-spin {
