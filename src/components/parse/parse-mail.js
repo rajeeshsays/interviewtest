@@ -30,11 +30,26 @@ useEffect(()=>{
 },[resj])
 
 return <>
-<p>Parse Mail</p>
-<textarea  aria-label="Input Text" value={data} onChange={(e)=>setData(e.target.value)}/>
+<div class="container">
+
+<span class="form-group">
+  <label>Input Content</label>
+<textarea id="mailc" aria-label="Input Text" value={data} onChange={(e)=>setData(e.target.value)}/>
+</span>
+
+
+<span class="form-group">
+  <label>Json Output</label>
 <textarea disabled value={resj} onChange={(e)=>setData(e.target.value)}/>
-<button onClick={clear}>Clear</button>
-<button onClick={submit}>Submit</button>
+</span>
+
+
+
+</div>
+<div class="button-group">
+<button class="btn clear-btn"  onClick={clear}>Clear</button>
+<button class="btn submit-btn" onClick={submit}>Submit</button>
+</div>
 </>
 
 }
