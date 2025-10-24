@@ -22,7 +22,7 @@ function App() {
     // </div>
 
     <div>
-     <h1 class="page-title">Email Content Parser</h1>
+     <h1 className="page-title">Email Content Parser</h1>
     <Parsemail/>
 
   

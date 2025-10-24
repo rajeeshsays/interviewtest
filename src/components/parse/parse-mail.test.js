@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent, waitFor,act } from '@testing-library/react';
 import Parsemail from './parse-mail';
 import * as parseService from '../../services/parseService';
 
@@ -30,9 +30,10 @@ describe('Parsemail component', () => {
 +'up as requested...'
 +'<expense><cost_centre>DEV632</cost_centre><total>35,000</total><payment_method>personal'
 +'card</payment_method></expense>'
+await act(async () => {
     fireEvent.change(input, { target: { value: content } });
     fireEvent.click(submitButton);
-
+});
     // Wait for async state update
     await waitFor(() => {
       const output = screen.getAllByRole('textbox')[1]; // second textarea
@@ -43,16 +44,19 @@ describe('Parsemail component', () => {
     expect(parseService.parseContent).toHaveBeenCalledWith(content);
   });
 
-  test('clear button resets input and output', () => {
+  test('clear button resets input and output', async () => {
     render(<Parsemail />);
     
     const input = screen.getAllByRole('textbox')[0];
     const output = screen.getAllByRole('textbox')[1];
     const clearButton = screen.getByText('Clear');
+   await act(async ()=>{
+        fireEvent.change(input, { target: { value: 'test content' } });
+   
+          fireEvent.click(clearButton);
+    })
 
-    fireEvent.change(input, { target: { value: 'test content' } });
-    fireEvent.click(clearButton);
-
+    
     expect(input.value).toBe('');
     expect(output.value).toBe('');
   });
