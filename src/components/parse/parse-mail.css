@@ -20,6 +20,8 @@ textarea {
   flex-direction: column;
   margin-bottom: 15px;
    align-items: center; 
+     width: 100%;
+ 
  
 } 
 
@@ -66,4 +68,9 @@ width: 96%;
 
 .submit-btn:hover {
   background-color: #1d4ed8;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
