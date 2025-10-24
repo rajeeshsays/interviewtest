@@ -25,15 +25,15 @@ await setResj('')
 
 
 return <>
-<div class="container">
+<div className="container">
 
-<span class="form-group">
+<span className="form-group">
   <label>Input Content</label>
 <textarea id="mailc" aria-label="Input Text" value={content} onChange={(e)=>setContent(e.target.value)}/>
 </span>
 
 
-<span class="form-group">
+<span className="form-group">
   <label>Json Output</label>
 <textarea disabled value={resj} />
 </span>
@@ -41,9 +41,9 @@ return <>
 
 
 </div>
-<div class="button-group">
-<button class="btn clear-btn"  onClick={clear}>Clear</button>
-<button class="btn submit-btn" onClick={submit}>Submit</button>
+<div className="button-group">
+<button className="btn clear-btn"  onClick={clear}>Clear</button>
+<button className="btn submit-btn" onClick={submit}>Submit</button>
 </div>
 </>
 
