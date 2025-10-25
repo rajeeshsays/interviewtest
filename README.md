@@ -30,7 +30,7 @@ Failing scenario 2 . Missing "Total" tag
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0b66491d-f5c7-423a-94fc-24df6bd3c802" />
 
 
-Failing scenario 3 . Missing "cost_centre"tag.value must be default to unknown
+Failing scenario 3 . Missing "cost_centre" Tag.value must be default to unknown
 ---------------------------------------------------------------------------
 
 
