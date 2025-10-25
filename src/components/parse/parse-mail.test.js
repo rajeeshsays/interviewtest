@@ -56,9 +56,11 @@ await act(async () => {
           fireEvent.click(clearButton);
     })
 
-    
-    expect(input.value).toBe('');
-    expect(output.value).toBe('');
+    await waitFor(()=>{
+      expect(input.value).toBe('');
+      expect(output.value).toBe('');
+    })
+
   });
 
   test('handles API errors gracefully', async () => {
