@@ -22,7 +22,7 @@ Failing Scenario 1. Opening tags that have no corresponding closing tag.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f3aaef7f-1491-4b46-8767-b1cef3aa83ac" />
 
 
-Failing scenario 2 . Missing <Total>
+Failing scenario 2 . Missing "<Total>"
 ------------------------------------
 
 
@@ -30,7 +30,7 @@ Failing scenario 2 . Missing <Total>
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0b66491d-f5c7-423a-94fc-24df6bd3c802" />
 
 
-Failing scenario 3 . Missing <cost_centre>.value must be default to unknown
+Failing scenario 3 . Missing "<cost_centre>".value must be default to unknown
 ---------------------------------------------------------------------------
 
 
